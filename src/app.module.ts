@@ -15,11 +15,7 @@ import { ParticipantModule } from './participant/participant.module';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.POSTGRES_HOST,
-      port: parseInt(<string>process.env.POSTGRES_PORT),
-      username: process.env.POSTGRES_USER,
-      password: process.env.POSTGRES_PASSWORD,
-      database: process.env.POSTGRES_DATABASE,
+      url:"postgres://nowyswud:lYHFHIahOonLgXc6uK3uRSfmKmn2WJRX@motty.db.elephantsql.com/nowyswud",
       autoLoadEntities: true,
       synchronize: true,
     })
